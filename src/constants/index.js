@@ -1,8 +1,8 @@
 import {
   mobile,
   backend,
-  creator,
   web,
+  logo,
   javascript,
   typescript,
   html,
@@ -46,15 +46,23 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Full-stack Developer",
     icon: mobile,
   },
   {
     title: "Backend Developer",
+    icon: backend,
+  },
+  {
+    title: "Android Developer",
+    icon: mobile,
+  },
+  {
+    title: "DevOps & Cloud",
     icon: backend,
   },
 ];
@@ -77,7 +85,7 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "React",
     icon: reactjs,
   },
   {
@@ -85,48 +93,97 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
+    name: "Node.js",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Express.js",
+    icon: nodejs,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Kotlin",
+    icon: mobile,
   },
   {
-    name: "git",
-    icon: git,
+    name: "AWS",
+    icon: backend,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
+    name: "Docker",
     icon: docker,
+  },
+  {
+    name: "PyTorch",
+    icon: backend,
+  },
+  {
+    name: "REST APIs",
+    icon: nodejs,
+  },
+  {
+    name: "CI/CD",
+    icon: backend,
   },
 ];
 
 const experiences = [
   {
-    title: "Assistant System Engineer Trainee",
-    company_name: "TATA Consultancy Services Limited",
-    icon: tcs,
-    iconBg: "#383E56",
-    date: "June 2021 - June 2022",
+    title: "Front-End Developer / Integration Specialist",
+    company_name: "FitSquare",
+    icon: logo,
+    iconBg: "#E6DEDD",
+    date: "July 2025 - Present",
     points: [
-      "Provided FTTP (fiber-to-the-premises) connections to homes and businesses in rural areas of England. Managed the entire installation process, from identifying potential customers to closing the connection.",
-
+      "Spearheaded client integration workflows, onboarding partner facilities onto the core mobile and web platform.",
+      "Translated domain requirements from gym operators into reusable React.js dashboard components and API contracts.",
+      "Onboarded 6 gym partners, reducing onboarding turnaround time by 35% through streamlined requirement gathering.",
     ],
   },
-  
+  {
+    title: "Android Developer",
+    company_name: "Indian Army (Contract)",
+    icon: logo,
+    iconBg: "#383E56",
+    date: "October 2025 - January 2026",
+    points: [
+      "Architected and deployed an end-to-end guest booking Android app using Kotlin and Firebase Realtime Database.",
+      "Engineered a deterministic time-slot scheduling engine with minute precision and 1-hour buffer windows.",
+      "Managed 46 concurrent users with zero booking mismatches, achieving 100% scheduling accuracy.",
+    ],
+  },
+  {
+    title: "M.Tech, Computer Science & Engineering",
+    company_name: "Indian Institute of Technology, Roorkee",
+    icon: logo,
+    iconBg: "#383E56",
+    date: "July 2022 - May 2024",
+    points: [
+      "Thesis on deep reinforcement learning for autonomous robot exploration and obstacle avoidance in continuous action spaces (Python, PyTorch, TD3).",
+      "Built a modular training framework with unit tests, logging, and model checkpointing. Collision-free navigation in 3,487 exploration steps, ahead of the heuristic baselines.",
+    ],
+  },
+  {
+    title: "Assistant System Engineer Trainee",
+    company_name: "Tata Consultancy Services",
+    icon: tcs,
+    iconBg: "#E6DEDD",
+    date: "June 2021 - June 2022",
+    points: [
+      "Built and maintained React interfaces for a fiber-to-the-premises connection system used across rural England.",
+      "Shipped reusable, accessible UI components with cross-browser support, working with UK stakeholders, QA, and product in Agile sprints.",
+      "Applied CORS, Content Security Policy, and client-side sanitization, and wired REST APIs into frontend state so screens rendered with less delay.",
+    ],
+  },
+  {
+    title: "B.Tech, Information Technology",
+    company_name: "MITS, Gwalior",
+    icon: logo,
+    iconBg: "#383E56",
+    date: "July 2017 - May 2021",
+    points: [
+      "Coursework in data structures, algorithms, databases, and web development. CGPA 7.0 / 10.",
+    ],
+  },
 ];
 
 const testimonials = [
@@ -158,17 +215,84 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Corona Virus Tracker",
+    name: "FitSquare Mobile Platform",
     description:
-      "This React App is used to track Positive ,Active and Death Cases by using React Components and Express Js deployed with the help of Heroku ",
+      "Full-stack mobile platform for gym management with React Native, Firebase, and Kotlin. Integrated multiple gym partners, streamlining onboarding and reducing turnaround time by 35%.",
+    tags: [
+      {
+        name: "react native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "kotlin",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mobile,
+    source_code_link: "https://github.com/roh8t/fitness-app",
+  },
+  {
+    name: "Indian Army Booking App",
+    description:
+      "Contract Android app for guest booking using Kotlin, Firebase RTDB, and deterministic scheduling algorithm. Supports 46 concurrent users with 100% scheduling accuracy and 1-hour buffer windows.",
+    tags: [
+      {
+        name: "kotlin",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "android",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: mobile,
+    source_code_link: "https://github.com/roh8t/army-booking-app",
+  },
+  {
+    name: "3D Developer Portfolio",
+    description:
+      "This site. A responsive portfolio with interactive Three.js scenes, lighting, and a modular React component layout, built with Vite.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "Express Js",
+        name: "threejs",
         color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: web,
+    source_code_link: "https://github.com/roh8t/Portfolio",
+  },
+  {
+    name: "Corona Virus Tracker",
+    description:
+      "Full-stack tracker for COVID-19 cases by region. React and Redux on the client, Express for the API, with error fallbacks and request retries around third-party health data.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
       },
     ],
     image: corona,
@@ -177,11 +301,15 @@ const projects = [
   {
     name: "News Parody",
     description:
-      "An Angular App which fetches worldwide as well as domestic news and other sub-categories with the help of API.",
+      "News reader that pulls worldwide and domestic headlines, plus topic feeds, from a public news API.",
     tags: [
       {
-        name: "Angular",
+        name: "angular",
         color: "blue-text-gradient",
+      },
+      {
+        name: "rest api",
+        color: "green-text-gradient",
       },
     ],
     image: news,
@@ -190,23 +318,19 @@ const projects = [
   {
     name: "Chat Box",
     description:
-      "This is a website used to chat in real time works with local host",
+      "Real-time chat over WebSockets, with Express and MongoDB storing rooms and messages.",
     tags: [
       {
-        name: "Node Js",
+        name: "node",
         color: "blue-text-gradient",
       },
       {
-        name: "Express Js",
+        name: "socket.io",
         color: "green-text-gradient",
       },
       {
-        name: "Mongo Db",
+        name: "mongodb",
         color: "pink-text-gradient",
-      },
-      {
-        name: "Socket.io",
-        color: "violet-text-gradient",
       },
     ],
     image: chat,

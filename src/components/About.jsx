@@ -47,7 +47,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am a Master's student at IIT Roorkee, where I am working on my thesis on self-driving cars. I am using the Jetson Nano to develop a self-driving car that can navigate offroad terrain. I am a quick learner and I am always eager to take on new challenges. I am also a team player and I am always willing to collaborate with others to bring ideas to life.I am passionate about React, Angular, and JavaScript, and I have experience in programming, machine learning, data science, cloud computing, and robotics. I am confident that I have the skills and experience to contribute to your team and help you bring your ideas to life.
+        I'm a software engineer with an M.Tech from IIT Roorkee and experience building production applications at TCS and as a contract Android developer for the Indian Army. I work across the full stack — React, TypeScript, Node.js, Express, Redux, Kotlin, and AWS — with a focus on responsive UI, API design, and security. At TCS I built interfaces for a fiber-connection system deployed across rural England. For my dissertation I created a deep reinforcement learning framework (TD3) for autonomous robot navigation.
+
+        I'm currently building native mobile apps at FitSquare (Android/iOS) and working on LLM/RAG pipelines using Anthropic API and MCP. I'm passionate about building scalable, production-ready systems with clean architecture and comprehensive testing.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

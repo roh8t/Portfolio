@@ -74,6 +74,12 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className='mt-3 text-secondary text-[16px] leading-[28px]'>
+          Gurgaon, Haryana · open to NCR, Bangalore, Pune, Hyderabad, and remote.<br />
+          <a href='mailto:roh8tpawar1997@gmail.com' className='text-white hover:text-[#915EFF]'>roh8tpawar1997@gmail.com</a><br />
+          +91 80044 12095<br />
+          <a href='https://www.linkedin.com/in/roh8t/' target='_blank' rel='noreferrer' className='text-white hover:text-[#915EFF]'>LinkedIn</a> · <a href='https://github.com/roh8t' target='_blank' rel='noreferrer' className='text-white hover:text-[#915EFF]'>GitHub</a>
+        </p>
 
         <form
           ref={formRef}
