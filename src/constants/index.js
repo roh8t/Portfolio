@@ -27,6 +27,13 @@ import {
   news,
   chat,
   corona,
+  battle,
+  mits,
+  iit,
+  swiftui,
+  cicd,
+  kotlin,
+  amazon,
 } from "../assets";
 
 export const navLinks = [
@@ -59,6 +66,10 @@ const services = [
   },
   {
     title: "Android Developer",
+    icon: mobile,
+  },
+  {
+    title: "IOS Developer",
     icon: mobile,
   },
   {
@@ -102,19 +113,19 @@ const technologies = [
   },
   {
     name: "Kotlin",
-    icon: mobile,
+    icon: kotlin,
   },
   {
     name: "AWS",
-    icon: backend,
+    icon: amazon,
   },
   {
     name: "Docker",
     icon: docker,
   },
   {
-    name: "PyTorch",
-    icon: backend,
+    name: "Swift UI",
+    icon: swiftui,
   },
   {
     name: "REST APIs",
@@ -122,31 +133,20 @@ const technologies = [
   },
   {
     name: "CI/CD",
-    icon: backend,
+    icon: cicd,
   },
+  
 ];
 
 const experiences = [
   {
-    title: "Front-End Developer / Integration Specialist",
-    company_name: "FitSquare",
-    icon: logo,
-    iconBg: "#E6DEDD",
-    date: "July 2025 - Present",
-    points: [
-      "Spearheaded client integration workflows, onboarding partner facilities onto the core mobile and web platform.",
-      "Translated domain requirements from gym operators into reusable React.js dashboard components and API contracts.",
-      "Onboarded 6 gym partners, reducing onboarding turnaround time by 35% through streamlined requirement gathering.",
-    ],
-  },
-  {
-    title: "Android Developer",
+    title: "Android and IOS Developer",
     company_name: "Indian Army (Contract)",
-    icon: logo,
+    icon: battle,
     iconBg: "#383E56",
-    date: "October 2025 - January 2026",
+    date: "August 2025 - November 2026",
     points: [
-      "Architected and deployed an end-to-end guest booking Android app using Kotlin and Firebase Realtime Database.",
+      "Architected and deployed an end-to-end guest booking Android and IOS app using Swift UI,Kotlin and Firebase Realtime Database.",
       "Engineered a deterministic time-slot scheduling engine with minute precision and 1-hour buffer windows.",
       "Managed 46 concurrent users with zero booking mismatches, achieving 100% scheduling accuracy.",
     ],
@@ -154,7 +154,7 @@ const experiences = [
   {
     title: "M.Tech, Computer Science & Engineering",
     company_name: "Indian Institute of Technology, Roorkee",
-    icon: logo,
+    icon: iit,
     iconBg: "#383E56",
     date: "July 2022 - May 2024",
     points: [
@@ -177,7 +177,7 @@ const experiences = [
   {
     title: "B.Tech, Information Technology",
     company_name: "MITS, Gwalior",
-    icon: logo,
+    icon: mits,
     iconBg: "#383E56",
     date: "July 2017 - May 2021",
     points: [
@@ -214,27 +214,7 @@ const testimonials = [
 ];
 
 const projects = [
-  {
-    name: "FitSquare Mobile Platform",
-    description:
-      "Full-stack mobile platform for gym management with React Native, Firebase, and Kotlin. Integrated multiple gym partners, streamlining onboarding and reducing turnaround time by 35%.",
-    tags: [
-      {
-        name: "react native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "kotlin",
-        color: "green-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: mobile,
-    source_code_link: "https://github.com/roh8t/fitness-app",
-  },
+  
   {
     name: "Indian Army Booking App",
     description:
@@ -246,15 +226,19 @@ const projects = [
       },
       {
         name: "firebase",
-        color: "green-text-gradient",
+        color: "red-text-gradient",
       },
       {
         name: "android",
         color: "violet-text-gradient",
       },
+      {
+        name: "ios",
+        color: "green-text-gradient",
+      },
+
     ],
-    image: mobile,
-    source_code_link: "https://github.com/roh8t/army-booking-app",
+    image: battle,
   },
   {
     name: "3D Developer Portfolio",

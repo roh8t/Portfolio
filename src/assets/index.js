@@ -20,12 +20,19 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import kotlin from "./tech/kotlin.webp";
+import cicd from "./tech/cicd.png";
+import amazon from "./tech/Amazon_Web_Services_Logo.svg.webp";
+import swiftui from "./tech/swiftui.jpeg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import tcs from "./company/tcs.png";
+import battle from "./company/ic_launcher-playstore.png";
+import mits from "./company/mits-logo.png";
+import iit from "./company/Indian_Institute_of_Technology_Roorkee_Logo.svg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -67,4 +74,11 @@ export {
   news,
   chat,
   corona,
+  battle,
+  iit,
+  mits,
+  kotlin,
+  swiftui,
+  amazon,
+  cicd,
 };
